@@ -272,6 +272,18 @@ else ifeq ($(TARGET_DEVICE), i9100g)
     BRIGHTNESS_SYS_FILE := "/sys/class/backlight/panel/brightness"
     BOARD_USE_B_SLOT_PROTOCOL := true
 
+#Galaxy S2 - i777
+else ifeq ($(TARGET_PRODUCT), cm_i777)
+    TARGET_COMMON_NAME := i777
+    BOOTLOADER_CMD_ARG := "download"
+    KERNEL_EXFAT_MODULE_NAME := "exfat"
+    TARGET_SCREEN_HEIGHT := 800
+    TARGET_SCREEN_WIDTH := 480
+    BOARD_HAS_LOW_RESOLUTION := true
+    BRIGHTNESS_SYS_FILE := "/sys/class/backlight/panel/brightness"
+    BOARD_USE_B_SLOT_PROTOCOL := true
+    ENABLE_BLACKHAWK_PATCH := true
+
 #Galaxy Note - n7000
 else ifeq ($(TARGET_DEVICE), n7000)
     TARGET_COMMON_NAME := n7000
