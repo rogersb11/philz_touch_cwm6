@@ -384,6 +384,7 @@ else ifneq ($(filter $(TARGET_DEVICE),t0lte t0lteatt t0ltetmo l900 i605),)
     TARGET_COMMON_NAME := Note 2 ($(TARGET_DEVICE))
     BOOTLOADER_CMD_ARG := "download"
     KERNEL_EXFAT_MODULE_NAME := "exfat"
+	TARGET_USERIMAGES_USE_F2FS := true
     TARGET_SCREEN_HEIGHT := 1280
     TARGET_SCREEN_WIDTH := 720
     BRIGHTNESS_SYS_FILE := "/sys/class/backlight/panel/brightness"
